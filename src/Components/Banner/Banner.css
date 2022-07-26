@@ -1,0 +1,78 @@
+.container-hero{
+    padding-top: 100px;
+    background-color: #F1F3FF;
+}
+.container-hero .row{
+    margin-left: auto;
+    margin-right: auto !important;
+}
+.hero-list{
+    margin-top: 100px !important;
+    padding-left: 100px !important;
+}
+.img-car {
+    padding: 0px!important;
+}
+.hero-list h1{
+    font-family: 'Arial';
+font-style: normal;
+font-weight: 700;
+font-size: 36px;
+line-height: 150%;
+/* or 54px */
+
+
+color: #000000;
+}
+
+.imgCar{
+        max-width: 100%;
+        height: auto;
+        
+}
+.btn-sewa{
+    font-family: 'Arial';
+font-style: normal;
+font-weight: 700;
+font-size: 14px;
+line-height: 20px;
+    align-items: center;
+    padding: 8px 12px;
+    gap: 10px;
+    background: #5CB85F;
+    border-radius: 2px;
+    color: white;
+    border-color: transparent;
+}
+
+@media screen and (max-width: 360px) {
+    .container-hero {
+        padding-top: 0;
+    }
+    .hero-list {
+        margin-top: 50px !important;
+        padding-right: 16px !important;
+        padding-left: 16px !important;
+    }
+    
+}
+@media screen and (max-width: 1220px) {
+    .hero-list {
+        margin-top: 0px !important;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .container-hero {
+        padding-top: 0;
+    }
+    .hero-list {
+        margin-top: 50px !important;
+        padding-right: 16px !important;
+        padding-left: 16px !important;
+    }
+    .img{
+        text-align: center;
+        padding-top: 24px !important;
+    }
+}

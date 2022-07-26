@@ -1,0 +1,29 @@
+.list-WhyUs{
+    display: flex;
+    justify-content: space-around;
+    gap: 16px;
+}
+.border-items{
+    display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 24px;
+gap: 16px;
+margin-bottom: 20px;
+width: 268px;
+border: 1px solid #D0D0D0;
+border-radius: 8px;
+}
+@media screen and (max-width: 780px) {
+    .wUs{
+        text-align: center;
+    }
+    .list-WhyUs{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .border-items{
+        width: auto;
+    }
+}

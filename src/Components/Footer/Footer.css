@@ -1,0 +1,24 @@
+.container-footer{
+    display: flex;
+    justify-content: space-between;
+}
+.container-fluid ul {
+    padding: 0 !important;
+}
+
+.list{
+    list-style: none;
+}
+.items-icon{
+    display: flex;
+    justify-content: space-around;
+}
+.items-icon li{
+    padding: 5PX;
+}
+@media screen and (max-width: 780px) {
+    .container-footer {
+        display: block;
+    }
+    
+}

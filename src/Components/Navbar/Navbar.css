@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.logo{
+    width: 100px;
+    height: 34px;
+    background: #0D28A6;
+}
+.container-navbar{
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #F1F3FF;
+    padding-top: 24px;
+    height: 35px;
+    padding-left: 5rem;
+    padding-right: 10rem;
+}
+.nav-links{
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+    width: 75%;
+    padding: 0 ;
+    margin: 0;
+}
+.nav-links a{
+    color: #000000;
+    text-decoration: none ;
+    outline: none ;
+    padding-right: 20px;
+}
+.mobile-menu{
+    background-color: transparent !important;
+    border: 0px;
+}
+
+.mobile-menu{
+    display: none;
+}
+@media screen and (max-width: 780px) {
+    .log{
+        display: flex;
+        position: relative;
+        top: 15px;
+    }
+    .nav-links{
+        display: none;
+    }
+    .mobile-menu{
+        display: block;
+        position: relative;
+        font-size: 30px;
+        outline: none;
+    }
+    .container-navbar{
+        justify-content: space-between;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+}
+@media screen and (min-width: 780px) {
+    .home{
+        display: none;
+    }
+}
+.nav-links-mobile{
+    position: absolute;
+    display:block;
+    list-style: none;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.15);
+    padding-left: 1rem !important;
+    width: 180px;
+    height: 660px;
+    right: 0px;
+    top: 0px;
+    transition: all 0.5s ease-out;
+}
+.nav-links-mobile a{
+    text-decoration: none;
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #000000;
+    padding: 18px;
+}
+
+.FaBars{
+    position: ;
+}
+#overlay {
+    position: fixed; /* Sit on top of the page content */
+    display: none; /* Hidden by default */
+    width: 100%; /* Full width (cover the whole page) */
+    height: 100%; /* Full height (cover the whole page) */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5); /* Black background with opacity */
+    z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+    cursor: pointer; /* Add a pointer on hover */
+  }
