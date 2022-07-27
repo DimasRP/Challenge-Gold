@@ -1,43 +1,11 @@
-
-import iconCompl from "../../Assets/icon_complete.png"
-import iconPrice from "../../Assets/icon_price.png"
-import icon24 from "../../Assets/icon_24hrs.png"
-import iconProf from "../../Assets/icon_professional.png"
-// import './WhyUs.css'
+import './CTA.css'
 const CTA = () => {
     return (
 
-        <div className="container">
-            <div className="row">
-                <div>
-                    <h1>Why Us?</h1>
-                    <p>Mengapa harus pilih Binar Car Rental?</p>
-                    <div className="list-WhyUs">
-                        <div className="border-items">
-                            <img src={iconCompl}></img>
-                            <h7>Mobil Lengkap</h7>
-                            <p>Tersedia banyak pilihan mobil, kondisi masih baru, bersih dan terawat</p>
-                        </div>
-                        <div className="border-items">
-                        <img src={iconPrice}></img>
-                            <h7>Mobil Lengkap</h7>
-                            <p>Tersedia banyak pilihan mobil, kondisi masih baru, bersih dan terawat</p>
-                        </div>
-                        <div className="border-items">
-                        <img src={icon24}></img>
-                            <h7>Mobil Lengkap</h7>
-                            <p>Tersedia banyak pilihan mobil, kondisi masih baru, bersih dan terawat</p>
-                        </div>
-                        <div className="border-items">
-                        <img src={iconProf}></img>
-                            <h7>Mobil Lengkap</h7>
-                            <p>Tersedia banyak pilihan mobil, kondisi masih baru, bersih dan terawat</p>
-                        </div>
-                    </div>
-                </div>
-                
-            </div>
-
+        <div className="container cta-bg">
+            <h1>Sewa Mobil di (Lokasimu) Sekarang</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+            <button className="btn-sewa">Mulai Sewa Mobil</button>
         </div>
     )
 }

@@ -1,13 +1,19 @@
+*{
+    font-family: 'Arial' !important;
+    font-style: normal !important;
+    font-weight: 700 !important;
+    color: #000000 !important;
+}
 
-
+h1{
+    font-size: 24px;
+    line-height: 36px;
+}
 p{
-    font-family: 'Arial';
-font-style: normal;
-font-weight: 700;
-font-size: 14px;
-line-height: 20px;
-/* or 143% */
+    font-size: 14px;
+    line-height: 20px;
+}
 
-
-color: #000000;
+.title{
+    margin-bottom: 4px;
 }

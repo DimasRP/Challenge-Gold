@@ -1,0 +1,31 @@
+.cta-bg{
+    background: #0D28A6 !important;
+    border-radius: 13px !important;
+    text-align: center;
+    height: 326px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    vertical-align: middle;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+} 
+.cta-bg h1, .cta-bg p {
+    color: #FFFFFF !important;
+   
+}
+.cta-bg h1{
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 150%;
+}
+
+@media screen and (max-width: 780px) {
+    .cta-bg {
+        height: auto;
+        padding: 64px 27px;
+gap: 32px;
+    }
+    
+}

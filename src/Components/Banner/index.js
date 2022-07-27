@@ -4,7 +4,7 @@ import './Banner.css'
 const Banner = () => {
     return (
 
-        <div className="container-hero">
+        <div className=" container-hero">
             <div className="row">
                 <div className='hero-list col-md-6'>
                     <h1>Sewa & Rental Mobil Terbaik di kawasan (Lokasimu)</h1>
