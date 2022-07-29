@@ -34,15 +34,16 @@
     outline: none ;
     padding-right: 20px;
 }
-.mobile-menu{
+.toggle{
     background-color: transparent !important;
     border: 0px;
 }
 
-.mobile-menu{
+.toggle{
     display: none;
 }
 @media screen and (max-width: 780px) {
+
     .log{
         display: flex;
         position: relative;
@@ -51,7 +52,7 @@
     .nav-links{
         display: none;
     }
-    .mobile-menu{
+    .toggle{
         display: block;
         position: relative;
         font-size: 30px;
@@ -65,9 +66,14 @@
 
 }
 @media screen and (min-width: 780px) {
-    .home{
+
+    .bcr{
         display: none;
     }
+    
+}
+.nav-links-mobile p{
+    margin-bottom: 0px !important;
 }
 .nav-links-mobile{
     position: absolute;
@@ -82,30 +88,15 @@
     top: 0px;
     transition: all 0.5s ease-out;
 }
-.nav-links-mobile a{
+.nav-links-mobile li{
     text-decoration: none;
-    font-family: 'Arial';
-    font-style: normal;
-    font-weight: 400;
     font-size: 14px;
     line-height: 20px;
-    color: #000000;
-    padding: 18px;
+    padding: 16px;
+    margin: 0;
 }
 
-.FaBars{
-    position: ;
+.nav-links-mobile a, .nav-links a{
+    text-decoration: none !important;
+    font-weight: 400 !important;
 }
-#overlay {
-    position: fixed; /* Sit on top of the page content */
-    display: none; /* Hidden by default */
-    width: 100%; /* Full width (cover the whole page) */
-    height: 100%; /* Full height (cover the whole page) */
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(0,0,0,0.5); /* Black background with opacity */
-    z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
-    cursor: pointer; /* Add a pointer on hover */
-  }

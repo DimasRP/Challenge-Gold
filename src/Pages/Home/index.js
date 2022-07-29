@@ -9,14 +9,15 @@ import Testimonial from "../../Components/Testimonial";
 import CTA from "../../Components/CTABanner";
 import FAQ from "../../Components/Faq";
 
+
 const Home = () => {
     return (
         <div className="">
             <NavBar/>
-            <Banner/>
+            <Banner showBtn={true}/>
             <OurServices/>
             <WhyUs/>
-            <Testimonial/>
+            {/* <Testimonial/> */}
             <CTA/>
             <FAQ/>
             <Footer/>

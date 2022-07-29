@@ -8,8 +8,8 @@
     align-items: center;
     vertical-align: middle;
     justify-content: center;
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 } 
 .cta-bg h1, .cta-bg p {
     color: #FFFFFF !important;
@@ -21,11 +21,11 @@
     line-height: 150%;
 }
 
-@media screen and (max-width: 780px) {
+@media screen and (max-width: 1200px) {
     .cta-bg {
         height: auto;
         padding: 64px 27px;
-gap: 32px;
+        gap: 32px;
     }
     
 }

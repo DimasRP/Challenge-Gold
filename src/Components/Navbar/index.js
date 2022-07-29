@@ -7,33 +7,34 @@ import "./Navbar.css"
 
 const NavBar = () => {
 
-    const [isMobile,setMobile] = useState (false)
+    const [isOpen,setOpen] = useState (false)
 
 
   return (
     <nav className='container-navbar'>
+        <Link to="/">
         <div className='logo'></div>
-        <ul className={isMobile? 'nav-links-mobile':'nav-links'}
-        onClick={() => setMobile(false)}>
-            <Link to='/' className='home'>
-                <li>BCR</li>
-            </Link>
-            <Link to='/' className='whyUs'>
-                <li>Our Services</li>
-            </Link>
-            <Link to='/' className=''>
-                <li>Why Us</li>
-            </Link><Link to='/' className=''>
-                <li>Testimonial</li>
-            </Link><Link to='/' className=''>
-                <li>FAQ</li>
-            </Link>
+        </Link>
+        
+        <ul className={isOpen? 'nav-links-mobile':'nav-links'} onClick={() => setOpen(false)}>
+            <li className="bcr">
+                <p href="" >BCR</p>
+            </li>
+            <li> 
+                <a href="#ourservices">Our Services</a>
+            </li>
+            <li>
+                <a href="#whyus">Why us</a>
+            </li>
+            <li>
+                <a href="#testimonial">Testimonial</a>
+            </li>
+            <li>
+                <a href="#faq"> FAQ</a>
+            </li>
         </ul>
-        <button 
-        className='mobile-menu'
-            onClick={() => setMobile(!isMobile)}
-            >
-            {isMobile? (
+        <button className='toggle'onClick={() => setOpen(!isOpen)}>
+            {isOpen? (
                 <FaTimes className="FaTimes" />
             ):(
                 <FaBars className="FaBars"/>

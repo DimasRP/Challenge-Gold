@@ -27,12 +27,16 @@
     align-items: center;
     padding: 8px 12px;
     gap: 10px;
-    background: #5CB85F;
+    background-color: #5CB85F !important;
     border-radius: 2px;
     color: white !important;
-    border-color: transparent;
+    border: 0px;
 }
-
+.btn-sewa:hover{
+    background-color: #198754 !important;
+    border: 1px;
+    border-color: #5CB85F;
+}
 @media screen and (max-width: 360px) {
     .container-hero {
         padding-top: 0;

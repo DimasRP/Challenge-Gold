@@ -4,7 +4,7 @@ import './Services.css'
 const OurServices = () => {
     return (
 
-        <div className="container-Services container">
+        <div id="ourservices" className="container-Services container">
             <div className="row">
             <div className='img col-md-6 imgServices'>
                     <img className="imgCar" src={ServicesImg}></img>

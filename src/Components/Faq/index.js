@@ -10,7 +10,7 @@ const FAQ = () => {
 
     return (
 
-        <div className="container container-faq">
+        <div id='faq' className="container container-faq">
             <div className='title'>
                 <h1>Frequently Asked Question</h1>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>

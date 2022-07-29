@@ -1,5 +1,5 @@
 
-import DetailCar from './Pages/DetailCar';
+import DetailCars from './Pages/DetailCars';
 import Home from './Pages/Home';
 import Cars from './Pages/Cars';
 import { BrowserRouter, Route, Routes } from "react-router-dom";
@@ -11,7 +11,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home/>} />
         <Route path="/carimobil" element={<Cars />} />
-        <Route path="/detailmobil" element={<DetailCar />} />
+        <Route path="/detailmobil/:id" element={<DetailCars/>} />
       </Routes>
 
       {/* <HomePage/>
