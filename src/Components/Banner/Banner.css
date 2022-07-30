@@ -23,7 +23,7 @@
         height: auto;
         
 }
-.btn-sewa{
+.btn{
     align-items: center;
     padding: 8px 12px;
     gap: 10px;
@@ -32,7 +32,7 @@
     color: white !important;
     border: 0px;
 }
-.btn-sewa:hover{
+.btn:hover{
     background-color: #198754 !important;
     border: 1px;
     border-color: #5CB85F;

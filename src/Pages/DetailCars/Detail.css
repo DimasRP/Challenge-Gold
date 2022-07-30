@@ -1,0 +1,69 @@
+.detail-car{
+    display: flex;
+    justify-content: space-around;
+}
+.box-car{
+    width: 405px;
+    height: 435px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 8px;
+    padding: 0px 24px;
+}
+.box-car img{
+    width: 270px;
+    height: 160px;
+}
+.img-detail{
+    text-align: center;
+    margin: 28px 0px;
+}
+.title-total{
+    display: flex;
+    justify-content: space-between;
+}
+.detail-paket{
+    width: 605px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 8px;
+    padding: 24px ;
+}
+.user img{
+    width: 12px;
+    height: 12px;
+}
+.user p{
+    margin: 0px;
+}
+.detail-paket li{
+    color: #8A8A8A !important;
+    font-size: 14px;
+    line-height: 175%;
+}
+.title-category{
+    color: #8A8A8A !important;
+}
+.title-total{
+    margin-top: 55px;
+}
+.accor-paket .accordion-button {
+    background-color: #FFFFFF;
+    border: 0px !important;
+    border-radius: 0px;
+    margin-bottom: 0px;
+    padding: 0px;
+}
+.accor-paket .accordion-body{
+    padding: 0px !important;
+}
+.accor-paket .accordion-button:not(.collapsed) {
+    color: transparent;
+    background-color: transparent;
+    box-shadow: none;
+}
+.accordion-button:focus {
+    z-index: 0;
+    border-color: transparent;
+    outline: 0;
+}

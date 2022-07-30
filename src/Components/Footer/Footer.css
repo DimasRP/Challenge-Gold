@@ -5,7 +5,14 @@
 .container-fluid ul {
     padding: 0 !important;
 }
-
+.faq-items{
+    font-size: 14px;
+    line-height: 20px;
+    
+}
+.container-footer li{
+    margin-bottom: 16px;
+}
 .list{
     list-style: none;
 }
@@ -15,6 +22,7 @@
 }
 .items-icon li{
     padding: 5PX;
+    margin-right: 16px;
 }
 @media screen and (max-width: 780px) {
     .container-footer {

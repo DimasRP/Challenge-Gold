@@ -1,80 +1,144 @@
-import React, { useState } from 'react';
-import {
-  Carousel,
-  CarouselItem,
-  CarouselControl,
-  CarouselIndicators,
-  CarouselCaption
-} from 'reactstrap';
+import React, { Component } from "react";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css"; 
+import "slick-carousel/slick/slick-theme.css";
+import "./Testimonial.css"
+import { testi } from "../../const/staticData";
 
-const items = [
-  {
-    src: 'https://picsum.photos/id/123/1200/400',
-    altText: 'Slide 1',
-    caption: 'Slide 1',
-    key: 1
-  },
-  {
-    src: 'https://picsum.photos/id/456/1200/400',
-    altText: 'Slide 2',
-    caption: 'Slide 2',
-    key: 2
-  },
-  {
-    src: 'https://picsum.photos/id/678/1200/400',
-    altText: 'Slide 3',
-    caption: 'Slide 3',
-    key: 3
+
+const Testimonial = () => {
+
+  // const [open, setOpen] = useState('');
+  //   const toggle = (id) => {
+  //       open === id ? setOpen() : setOpen(id);
+  //   };
+  const next=  () => {
+    this.slider.slickNext();
   }
-];
-
-const Testimonial = (args) => {
-  const [activeIndex, setActiveIndex] = useState(0);
-  const [animating, setAnimating] = useState(false);
-
-  const next = () => {
-    if (animating) return;
-    const nextIndex = activeIndex === items.length - 1 ? 0 : activeIndex + 1;
-    setActiveIndex(nextIndex);
+  const previous =()=> {
+    this.slider.slickPrev();
   }
-
-  const previous = () => {
-    if (animating) return;
-    const nextIndex = activeIndex === 0 ? items.length - 1 : activeIndex - 1;
-    setActiveIndex(nextIndex);
+  
+  const constructor =()=> {
+    this.next = this.next.bind(this);
+    this.previous = this.previous.bind(this);
   }
-
-  const goToIndex = (newIndex) => {
-    if (animating) return;
-    setActiveIndex(newIndex);
-  }
-
-  const slides = items.map((item) => {
-    return (
-      <CarouselItem
-        onExiting={() => setAnimating(true)}
-        onExited={() => setAnimating(false)}
-        key={item.src}
-      >
-        <img src={item.src} alt={item.altText} />
-        <CarouselCaption captionText={item.caption} captionHeader={item.caption} />
-      </CarouselItem>
-    );
-  });
-
+  const settings = {
+    // dots: true,
+    infinite: false,
+    speed: 500,
+    slidesToShow: 3,
+    slidesToScroll: 4,
+    initialSlide: 0,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3,
+          infinite: true,
+          dots: true
+        }
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          initialSlide: 2
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      }
+    ]
+  };
   return (
-    <Carousel
-      activeIndex={activeIndex}
-      next={next}
-      previous={previous}
-      {...args}
-    >
-      <CarouselIndicators items={items} activeIndex={activeIndex} onClickHandler={goToIndex} />
-      {slides}
-      <CarouselControl direction="prev" directionText="Previous" onClickHandler={previous} />
-      <CarouselControl direction="next" directionText="Next" onClickHandler={next} />
-    </Carousel>
-  );
+    <div className="container container-testi">
+      <Slider  {...settings}>
+      {testi.map(item=>(
+        <div className="card-testi">
+          <div className="card-top"></div>
+           <img src={item.image} alt={item.id}/>
+           <h1>Bintang</h1>
+           <p>"{item.comment}"</p>
+           <p>{item.date}</p>
+          <div className="card-bottom"></div>
+        </div>
+      ))}
+      </Slider>
+      <div style={{ textAlign: "center" }}>
+          <button className="button" onClick={previous}>
+            Previous
+          </button>
+          <button className="button" onClick={next}>
+            Next
+          </button>
+      </div>
+    </div>
+  )
 }
 
-export default Testimonial;
+export default Testimonial
+
+
+
+// export default class PreviousNextMethods extends Component {
+//   constructor(props) {
+//     super(props);
+//     this.next = this.next.bind(this);
+//     this.previous = this.previous.bind(this);
+//   }
+//   next() {
+//     this.slider.slickNext();
+//   }
+//   previous() {
+//     this.slider.slickPrev();
+//   }
+//   render() {
+//     const settings = {
+//       // dots: true,
+//       infinite: true,
+//       speed: 500,
+//       slidesToShow: 1,
+//       slidesToScroll: 1
+//     };
+//     return (
+//       <div>
+//         <h2>Previous and Next methods</h2>
+//         <Slider ref={c => (this.slider = c)} {...settings}>
+//           <div key={1}>
+//             <h3>1</h3>
+//           </div>
+//           <div key={2}>
+//             <h3>2</h3>
+//           </div>
+//           <div key={3}>
+//             <h3>3</h3>
+//           </div>
+//           <div key={4}>
+//             <h3>4</h3>
+//           </div>
+//           <div key={5}>
+//             <h3>5</h3>
+//           </div>
+//           <div key={6}>
+//             <h3>6</h3>
+//           </div>
+//         </Slider>
+//         <div style={{ textAlign: "center" }}>
+//           <button className="button" onClick={this.previous}>
+//             Previous
+//           </button>
+//           <button className="button" onClick={this.next}>
+//             Next
+//           </button>
+//         </div>
+//       </div>
+//     );
+//   }
+// }

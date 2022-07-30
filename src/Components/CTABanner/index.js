@@ -8,7 +8,7 @@ const CTA = () => {
                 <h1>Sewa Mobil di (Lokasimu) Sekarang</h1>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
                 <Link to="/carimobil">
-                    <button className="btn-sewa">Mulai Sewa Mobil</button>
+                    <button className="btn">Mulai Sewa Mobil</button>
                 </Link>
                
             </div>

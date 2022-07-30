@@ -13,7 +13,7 @@ const Banner = ({showBtn}) => {
                     
                     {!!showBtn && (
                         <Link to="/carimobil">
-                            <button className="btn-sewa">Mulai Sewa Mobil</button>
+                            <button className="btn">Mulai Sewa Mobil</button>
                         </Link> 
                     )}
                     

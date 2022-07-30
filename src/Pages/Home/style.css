@@ -17,3 +17,17 @@ p{
 .title{
     margin-bottom: 4px;
 }
+.btn{
+    align-items: center;
+    padding: 8px 12px;
+    gap: 10px;
+    background-color: #5CB85F !important;
+    border-radius: 2px;
+    color: white !important;
+    border: 0px;
+}
+.btn:hover{
+    background-color: #198754 !important;
+    border: 1px;
+    border-color: #5CB85F;
+}

@@ -8,7 +8,7 @@ const Footer = () => {
     return (
         <div className="container container-footer container-fluid">
             {/* <div className=''> */}
-            <ul className='list'>
+            <ul className='list faq-items'>
                 <li>Jalan Suroyo No. 161 Mayangan Kota Probolonggo 672000</li>
                 <li>binarcarrental@gmail.com</li>
                 <li>081-233-334-808</li>
@@ -22,7 +22,6 @@ const Footer = () => {
             <div className='list'>
                 <p>Connect with us</p>
                 <ul className='list items-icon'>
-                
                     <li><img className="icons" src={fb}></img></li>
                     <li><img className="icons" src={ig}></img></li>
                     <li><img className="icons" src={twtr}></img></li>

@@ -1,6 +1,98 @@
-.box-cari{
+.box{
     display: flex;
     justify-content: space-around;
+}
+.box-cari{
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
     border-radius: 8px;
+    width: 1047px;
+    height: 142px;
+}
+.box-filter{
+    display: flex;
+    justify-content: space-around;
+}
+.card-item{
+    text-align: center;
+}
+.card{
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 8px;
+     width: 333px;
+    height: 478px;
+     margin: 12px;
+     padding: 24px;
+    gap: 24px;
+
+}
+.card-img img{
+    width: 270px;
+height: 160px;
+}
+.title-price{
+    font-size: 16px;
+}
+.btn-card{
+    width: 285px;
+    height: 48px;
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+.btn-cari{
+    display: flex;
+    align-items: flex-end;
+}
+.card-item p, .card-item h1{
+    text-align: left;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+.box-filter input{
+    border: 1px solid #CCCCCC;
+    border-radius: 2px;
+    padding: 9px 12px;
+}
+
+.card-item > .card{
+    display: inline-block;
+    
+}
+.box-filter{
+    font-family: 'Rubik' !important;
+    font-style: normal !important;
+    font-weight: 300 !important;
+    font-size: 12px;
+    line-height: 18px !important;
+    color: #999999 !important;
+}
+.css-9gakcf-option {
+    background-color: #C9E7CA !important;
+}
+.css-1n7v3ny-option {
+    background-color: transparent;
+}
+.css-1s2u09g-control, input {
+    width: 208px;
+    height: 36px;
+}
+.css-6j8wv5-Input {
+    margin: 0px !important;
+    padding: 0px !important
+}
+.css-qc6sy-singleValue {
+    font-weight: 400 !important;
+    font-size: 12px !important;
+    line-height: 18px !important;
+    color: #8A8A8A !important;
+}
+@media screen and (max-width: 1200px){
+    .box-cari{
+        height: auto;
+    }
+    .box-filter{
+        display: block;
+    }
+    input, select, textarea {
+        width: -webkit-fill-available;
+    }
 }

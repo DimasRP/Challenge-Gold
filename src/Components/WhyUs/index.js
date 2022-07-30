@@ -6,7 +6,6 @@ import iconProf from "../../Assets/icon_professional.png"
 import './WhyUs.css'
 const WhyUs = () => {
     return (
-
         <div id="whyus" className="container">
             <div className="title">
                 <h1>Why Us?</h1>
