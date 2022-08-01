@@ -37,40 +37,48 @@ const settings = {
 const testi = [
   {id: 1,
   image: photo1,
+  rate: 5,
   comment:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod",
   date: "John Dee 32, Bromo"
   },
   {id: 2,
   image: photo2,
+  rate: 4,
   comment:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod",
   date: "John Dee 32, Bromo"
   },
   {id: 3,
   image: photo1,
+  rate: 3,
   comment:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod",
   date: "John Dee 32, Bromo"
   },
   {id: 4,
   image: photo2,
+  rate: 2,
   comment:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod",
   date: "John Dee 32, Bromo"
   },
-  {id: 1,
+  {id: 5,
     image: photo1,
+    rate: 1,
     comment:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod",
     date: "John Dee 32, Bromo"
     },
-    {id: 2,
+    {id: 6,
     image: photo2,
+    rate: 6,
     comment:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod",
     date: "John Dee 32, Bromo"
     },
-    {id: 3,
+    {id: 7,
     image: photo1,
+    rate: 7,
     comment:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod",
     date: "John Dee 32, Bromo"
     },
-    {id: 4,
+    {id: 8,
+    rate: 8,
     image: photo2,
     comment:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod",
     date: "John Dee 32, Bromo"

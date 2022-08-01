@@ -10,7 +10,6 @@ import CTA from "../../Components/CTABanner";
 import FAQ from "../../Components/Faq";
 import Arrow from "../../Components/Testimonial/arrow"
 
-
 const Home = () => {
     return (
         <div className="">
@@ -18,8 +17,8 @@ const Home = () => {
             <Banner showBtn={true}/>
             <OurServices/>
             <WhyUs/>
-            {/* <Testimonial/> */}
-            <Arrow/>
+            <Testimonial/>
+            {/* <Arrow/> */}
             <CTA/>
             <FAQ/>
             <Footer/>

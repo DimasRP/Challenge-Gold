@@ -16,8 +16,6 @@ const Banner = ({showBtn}) => {
                             <button className="btn">Mulai Sewa Mobil</button>
                         </Link> 
                     )}
-                    
-            
                 </div>
                 <div className='img col-md-6'>
                     <img className="imgCar" src={carImage}></img>
