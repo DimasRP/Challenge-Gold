@@ -8,8 +8,8 @@
     align-items: center;
     vertical-align: middle;
     justify-content: center;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    padding-top: 50px;
+    padding-bottom: 50px;
 } 
 .cta-bg h1, .cta-bg p {
     color: #FFFFFF !important;

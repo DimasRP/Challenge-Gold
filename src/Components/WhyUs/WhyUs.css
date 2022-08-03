@@ -3,6 +3,10 @@
     justify-content: space-around;
     gap: 16px;
 }
+.container-whyus{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
 .border-items{
     display: flex;
     flex-direction: column;

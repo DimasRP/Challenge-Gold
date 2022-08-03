@@ -1,8 +1,8 @@
 .container-faq{
     display: flex;
     justify-content: space-around;
-    margin-bottom: 50px;
-    margin-top: 50px;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 .container-faq p{
     margin: 0px;

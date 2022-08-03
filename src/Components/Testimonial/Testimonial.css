@@ -15,12 +15,14 @@ h3 {
 }
 .container-testi{
     text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 .slick-slide > div {
     margin: 10px;
 }
 .slick-list{
-    margin: 0 -10px;
+    margin: 0 0px;
 }
 .img-profile{ 
     margin: 0px 14px;
@@ -57,4 +59,13 @@ h3 {
 }
 #prev:hover, #next:hover{
     stroke: #fff;
+}
+@media screen and (max-width: 500px) {
+    .card-testi{
+        display: flex !important;
+        flex-direction: column  !important;
+    }
+    .text-comment {
+        margin-left: 0px;
+    }
 }

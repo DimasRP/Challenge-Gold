@@ -7,7 +7,7 @@ const OurServices = () => {
 
         <div id="ourservices" className="container-Services container">
             <div className="row">
-            <div className='img col-md-6 imgServices'>
+                <div className='img col-md-6 imgServices'>
                     <img className="imgCar" src={ServicesImg}></img>
                 </div>
                 <div className='col-md-6'>
@@ -21,8 +21,6 @@ const OurServices = () => {
                         <p><img src={icon_check}/> Layanan Airport Transfer / Drop In Out</p>
                     </div>
                 </div>
-                
-                
             </div>
 
         </div>

@@ -1,5 +1,3 @@
-
-
 import { FaBars, FaTimes } from "react-icons/fa";
 import React, {useState} from 'react'
 import {Link} from 'react-router-dom'
@@ -15,8 +13,8 @@ const NavBar = () => {
         <Link to="/">
         <div className='logo'></div>
         </Link>
-        
-        <ul className={isOpen? 'nav-links-mobile':'nav-links'} onClick={() => setOpen(false)}>
+        <div className={isOpen? 'nav-links-mobile':'nav-links'} onClick={() => setOpen(false)} >
+        <ul >
             <li className="bcr">
                 <p href="" >BCR</p>
             </li>
@@ -33,6 +31,7 @@ const NavBar = () => {
                 <a href="#faq"> FAQ</a>
             </li>
         </ul>
+        </div>
         <button className='toggle'onClick={() => setOpen(!isOpen)}>
             {isOpen? (
                 <FaTimes className="FaTimes" />

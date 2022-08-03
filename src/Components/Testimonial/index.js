@@ -3,7 +3,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
 import "./Testimonial.css"
-import { testi } from "../../const/staticData";
+import { testi, settings } from "../Data";
 
 
 export default class Testimonial extends Component {
@@ -19,34 +19,7 @@ export default class Testimonial extends Component {
       this.slider.slickPrev();
     }
     render() {
-      const settings = {
-        className: "center",
-        centerMode: true,
-        infinite: true,
-        centerPadding: "60px",
-        slidesToShow: 1,
-        speed: 500,
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        responsive: [
-            {
-              breakpoint: 1024,
-              settings: {
-                slidesToShow: 1,
-                slidesToScroll:1,
-                infinite: true,
-              }
-            },
-            {
-              breakpoint: 600,
-              settings: {
-                slidesToShow: 1,
-                slidesToScroll: 1,
-                initialSlide: 1
-              }
-            }
-          ]
-      };
+      
       return (
         <div id="testimonial" className=" container-testi">
         <h1>Testimonial</h1>

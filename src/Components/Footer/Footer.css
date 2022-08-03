@@ -13,8 +13,12 @@
 .container-footer li{
     margin-bottom: 16px;
 }
-.list{
+.list, .list a{
     list-style: none;
+    text-decoration: none;
+    font-weight: 400 !important;
+    font-size: 14px;
+    line-height: 20px
 }
 .items-icon{
     display: flex;

@@ -31,3 +31,6 @@ p{
     border: 1px;
     border-color: #5CB85F;
 }
+ul, li{
+    list-style: none;
+}

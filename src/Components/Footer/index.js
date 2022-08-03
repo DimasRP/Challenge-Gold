@@ -14,19 +14,19 @@ const Footer = () => {
                 <li>081-233-334-808</li>
             </ul>
             <ul className='list'>
-                <li>Our Services</li>
-                <li>Why Us</li>
-                <li>Testimonial</li>
-                <li>FAQ</li>
+                <li><a href='#ourservices'>Our Services</a></li>
+                <li><a href='#whyus'>Why Us</a></li>
+                <li><a href='#testimonial'>Testimonial</a></li>
+                <li><a href='#faq'>FAQ</a></li>
             </ul>
             <div className='list'>
                 <p>Connect with us</p>
                 <ul className='list items-icon'>
-                    <li><img className="icons" src={fb}></img></li>
-                    <li><img className="icons" src={ig}></img></li>
-                    <li><img className="icons" src={twtr}></img></li>
-                    <li><img className="icons" src={mail}></img></li>
-                    <li><img className="icons" src={twitch}></img></li>
+                    <li><a href='https://www.facebook.com/'><img className="icons" src={fb}></img></a></li>
+                    <li><a href='https://www.instagram.com/'><img className="icons" src={ig}></img></a></li>
+                    <li><a href='https://twitter.com/'><img className="icons" src={twtr}></img></a></li>
+                    <li><a href='http://mail.google.com'><img className="icons" src={mail}></img></a></li>
+                    <li><a href='https://www.twitch.tv/'><img className="icons" src={twitch}></img></a></li>
                 </ul>
             </div>
             <div>

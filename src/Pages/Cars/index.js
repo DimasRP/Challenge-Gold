@@ -1,7 +1,6 @@
 import axios from "axios"
 import React from 'react'
 import { useEffect, useState } from "react"
-
 import Banner from "../../Components/Banner"
 import Footer from "../../Components/Footer"
 import NavBar from "../../Components/Navbar"
@@ -89,13 +88,12 @@ const Cars = () => {
     
     console.log("data",data)
     console.log("data fdata", fdata);
-
     return (
         <div>
             <NavBar/>
             <Banner showBtn={false}/>
-            <div className="container box">
-                <div className=" box-cari container">
+            <div className=" box">
+                <div className=" box-cari">
                     <div>
                         <h1>Pencarianmu</h1>
                     </div>
@@ -140,6 +138,7 @@ const Cars = () => {
             </div>
             {!!notF &&
             <h1>Data Tidak Ditemukan</h1>
+        
             }
             <CarList data = {!fdata.length ? data : fdata} />
             <Footer/>

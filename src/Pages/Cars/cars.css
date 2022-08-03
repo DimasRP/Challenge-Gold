@@ -7,6 +7,8 @@
     border-radius: 8px;
     width: 1047px;
     height: 142px;
+    padding: 10px;
+    margin: 10px;
 }
 .box-filter{
     display: flex;
@@ -18,11 +20,12 @@
 .card{
     box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.15);
     border-radius: 8px;
-     width: 333px;
+    width: 333px;
     height: 478px;
-     margin: 12px;
-     padding: 24px;
+    margin: 12px;
+    padding: 24px;
     gap: 24px;
+    --bs-card-border-width: 0px !important;
 
 }
 .card-img img{
@@ -71,7 +74,7 @@ height: 160px;
 .css-1n7v3ny-option {
     background-color: transparent;
 }
-.css-1s2u09g-control, input {
+.css-1s2u09g-control {
     width: 208px;
     height: 36px;
 }
@@ -86,6 +89,11 @@ height: 160px;
     color: #8A8A8A !important;
 }
 @media screen and (max-width: 1200px){
+    .css-1s2u09g-control{
+        width: auto;
+    }
+}
+@media screen and (max-width: 700px){
     .box-cari{
         height: auto;
     }
@@ -94,5 +102,19 @@ height: 160px;
     }
     input, select, textarea {
         width: -webkit-fill-available;
+    }
+    
+}
+@media screen and (max-width: 350px){
+    .card{
+        width: 200px;
+        height: auto;
+    }
+    .card-img img {
+        width: 150px;
+        height: 100px;
+    }
+    .btn-card {
+        width: auto;
     }
 }
