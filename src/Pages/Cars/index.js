@@ -7,31 +7,17 @@ import NavBar from "../../Components/Navbar"
 import CarList from "../../Components/CarList"
 import './cars.css'
 import Select from 'react-select'
-
+import {Status, Harga, Kategori} from "./data"
 
 
 const Cars = () => {
     const [data, setData] = useState([])
     const [name, setName] = useState("")
-    const [category, setCategory] = useState("")
-    const [status, setStatus] = useState("")
+    // const [category, setCategory] = useState("")
+    // const [status, setStatus] = useState("")
     const [fdata, setFdata] = useState([])
     const [notF, setNotF] = useState (false)
 
-    const Kategori = [
-        { value: '2 - 4 orang', label: '2 - 4 orang' },
-        { value: '4 - 6 orang', label: '4 - 6 orang' },
-        { value: '6 - 8 orang', label: '6 - 8 orang' }
-    ]
-    const Harga = [
-        { value: '< Rp. 400.000', label: '< Rp. 400.000'},
-        { value: 'Rp. 400.000 - Rp. 600.000', label: 'Rp. 400.000 - Rp. 600.000' },
-        { value: '> Rp. 600.000', label: '> Rp. 600.000' }
-    ]
-    const Status = [
-        { value:false, label: "Disewa" },
-        { value:true, label: "Belum"}
-    ]
     
     useEffect(()=> {
         axios
@@ -49,14 +35,14 @@ const Cars = () => {
             setNotF(false)
         }
     }
-    const handleSelectCategory =(event)=>{
-        console.log(event);
-        setCategory(event.value, event.label);
-    }
-    const handleSelectStatus =(event)=>{
-        console.log(event);
-        setStatus(event.value, event.label);
-    }
+    // const handleSelectCategory =(event)=>{
+    //     console.log(event);
+    //     setCategory(event.value, event.label);
+    // }
+    // const handleSelectStatus =(event)=>{
+    //     console.log(event);
+    //     setStatus(event.value, event.label);
+    // }
     
     // const handleSearch = () =>{
     //     const payload = {
@@ -70,7 +56,7 @@ const Cars = () => {
 
     const handleSearch = () => {
         const newArr = data.filter((event) => (
-            event.name == name
+            event.name === name
         ))
         // const arrKategori = data.filter(data => (
         //     data.category == category
@@ -83,7 +69,7 @@ const Cars = () => {
         setNotF(true)
         }
         setFdata(newArr)
-        // setData(arrKategori)
+        
     }
     
     console.log("data",data)
@@ -110,7 +96,7 @@ const Cars = () => {
                         <Select
                             defaultValue={{value:"Masukkan Kapasitas Mobil", label:"Masukkan Kapasitas Mobil"}}
                             options={Kategori}
-                            onChange={handleSelectCategory}
+                            // onChange={handleSelectCategory}
                         />
                     </div>
                     <div>
@@ -118,7 +104,7 @@ const Cars = () => {
                         <Select
                             defaultValue={{value:"Masukan Harga Sewa per Hari", label:"Masukan Harga Sewa per Hari"}}
                             options={Harga}
-                            onChange={handleSelectCategory}
+                            // onChange={handleSelectCategory}
                         />
                     </div>
                     <div>
@@ -126,7 +112,7 @@ const Cars = () => {
                         <Select
                             defaultValue={{value:"Status", label:"Status"}}
                             options={Status}
-                            onChange={handleSelectStatus}
+                            // onChange={handleSelectStatus}
                         />
                     </div>
                     <div className=" btn-cari">
@@ -137,8 +123,9 @@ const Cars = () => {
                 </div>
             </div>
             {!!notF &&
-            <h1>Data Tidak Ditemukan</h1>
-        
+            <div className="notfound">
+                <h1>Data Tidak Ditemukan</h1>
+            </div>
             }
             <CarList data = {!fdata.length ? data : fdata} />
             <Footer/>

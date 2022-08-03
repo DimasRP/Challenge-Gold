@@ -31,7 +31,7 @@ export default class Testimonial extends Component {
             <img src={item.image} alt={item.id}/>
           </div>
           <div className="text-comment">
-            <h1>{item.rate}</h1>
+            <div className="rate"><img src={item.rate}/></div>
             <p>"{item.comment}"</p>
             <p>{item.date}</p>
           </div>

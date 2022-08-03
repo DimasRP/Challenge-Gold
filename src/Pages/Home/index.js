@@ -8,7 +8,6 @@ import WhyUs from "../../Components/WhyUs";
 import Testimonial from "../../Components/Testimonial";
 import CTA from "../../Components/CTABanner";
 import FAQ from "../../Components/Faq";
-import Arrow from "../../Components/Testimonial/arrow"
 
 const Home = () => {
     return (
@@ -18,7 +17,6 @@ const Home = () => {
             <OurServices/>
             <WhyUs/>
             <Testimonial/>
-            {/* <Arrow/> */}
             <CTA/>
             <FAQ/>
             <Footer/>
