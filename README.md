@@ -1,6 +1,6 @@
-# Getting Started with Create React App
+# Website Binar Rental Car
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Website created for Binar Academy
 
 ## Demo Link (netlifly)
 
