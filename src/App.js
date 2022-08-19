@@ -2,7 +2,7 @@
 import DetailCars from './Pages/DetailCars';
 import Home from './Pages/Home';
 import Cars from './Pages/Cars';
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 
 
 function App() {
