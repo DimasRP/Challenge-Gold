@@ -2,9 +2,9 @@
 
 Website created for Binar Academy
 
-## Demo Link (netlifly)
+## Demo Link (Vercel)
 
-(https://bcr-dev.netlify.app/)
+https://challenge-gold-eight.vercel.app/
 
 ## Available Scripts
 
